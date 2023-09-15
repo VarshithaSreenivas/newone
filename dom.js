@@ -14,10 +14,15 @@ header.style.borderBottom='solid 4px #000';
 var items=document.getElementsByClassName('list-group-item');
 console.log(items);
 items[2].style.backgroundColor="green";
-items[0].style.fontWeight='bold';
-items[1].style.fontWeight='bold';
-items[2].style.fontWeight='bold';
-items[3].style.fontWeight='bold';
+
+var li=document.getElementsByTagName('li');
+console.log(li);
+li.add='Hello sir';
+for(var i=0;i<li.length;i++)
+{
+    li[i].style.fontWeight='bold';
+}
+li[4].style.color='coral';
 
 
 
