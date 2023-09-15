@@ -25,4 +25,21 @@ for(var i=0;i<li.length;i++)
 li[4].style.color='coral';
 
 
+var items=document.querySelector('.list-group-item');
+console.log(items);
+var secondItem=document.querySelector('.list-group-item:nth-child(1)');
+secondItem.style.backgroundColor='green';
+var nextItem=document.querySelector('.list-group-item:nth-child(2)');
+nextItem.style.display='none';
+
+var nthItem=document.querySelectorAll('.list-group-item');
+console.log(nthItem);
+nthItem[2].style.color='green';
+var odd=document.querySelectorAll('li:nth-child(odd)');
+for(var i=0;i<odd.length;i++)
+{
+    odd[i].style.backgroundColor='green';
+}
+
+
 
